@@ -1,0 +1,8 @@
+{
+  "name": "gaac-website",
+  "private": true,
+  "scripts": {
+    "dev": "npm --prefix oaic-challenge run dev",
+    "check": "npm --prefix oaic-challenge run check"
+  }
+}

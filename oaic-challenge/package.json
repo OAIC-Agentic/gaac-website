@@ -1,0 +1,10 @@
+{
+  "name": "gaac-by-oaic",
+  "version": "1.0.0",
+  "private": true,
+  "description": "GAAC by OAIC — a bilingual, multi-page challenge website with three visual directions.",
+  "scripts": {
+    "dev": "python3 -m http.server 4173 --directory dist",
+    "check": "node --check dist/app.js && node --check dist/art.js"
+  }
+}
