@@ -1,5 +1,7 @@
 .DS_Store
 node_modules/
+.sites-runtime/
+__pycache__/
 *.tar.gz
 *.tgz
 __mobile-review.html

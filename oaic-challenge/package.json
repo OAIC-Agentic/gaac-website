@@ -2,9 +2,20 @@
   "name": "gaac-by-oaic",
   "version": "1.0.0",
   "private": true,
-  "description": "GAAC by OAIC — a bilingual, multi-page challenge website with three visual directions.",
+  "description": "Grand Agentic AI Challenge — 智能体大奖赛：赛事招募、考试评估与产业合作。",
   "scripts": {
-    "dev": "python3 -m http.server 4173 --directory dist",
-    "check": "node --check dist/app.js && node --check dist/art.js"
+    "dev": "node scripts/dev.mjs",
+    "check": "node --check dist/app.js && node --check dist/event-pages.js && node --check dist/art.js && node --check scripts/build-ui.mjs && node --check scripts/dev.mjs",
+    "build": "node scripts/build-ui.mjs"
+  },
+  "type": "module",
+  "dependencies": {
+    "liquid-gooey": "0.2.2",
+    "react": "^19.2.0",
+    "react-dom": "^19.2.0",
+    "lucide-static": "1.66.0"
+  },
+  "devDependencies": {
+    "esbuild": "0.28.2"
   }
 }

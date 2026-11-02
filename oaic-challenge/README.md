@@ -1,46 +1,48 @@
-# GAAC by OAIC
+# Grand Agentic AI Challenge · 智能体大奖赛
 
-A dependency-free, bilingual website based on the supplied OAIC V1.3 executive presentation and planning text. The supplied GAAC logo identifies the event; OAIC identifies the wider initiative.
+A bilingual event website with a static shell and a React-enhanced liquid glass participant guide. Current public copy is based on the event introduction supplied on 2 November 2026, retained at `dist/assets/GAAC_Event_Overview_2026-11-02.txt`. GAAC is the event; OAIC is the wider industry initiative.
 
-## Preview
+## Preview and validation
 
-Run `npm run dev`, then open `http://localhost:4173`. All site files are in `dist/`; there is no build step. `npm run check` validates JavaScript syntax.
+Run `npm ci` on a fresh checkout, then `npm run dev` and open `http://localhost:4173`. The dev command builds and watches the React component while serving the static site; it prints the complete local URL. `npm run build` bundles the UI and copies the selected Lucide SVG icons and licenses into `dist/assets/`. `npm run check` checks site and tooling syntax. The static output in `dist/` is ready to publish.
 
-## Pages
+## Content and navigation
 
-- `/` — concise proposition, applications, audience paths, ecosystem overview
-- `/challenge/` — format, shared hardware, application requirements, assessment, FAQ
-- `/ecosystem/` — Testbed, collaboration loop, assets, five capabilities, 90-day plan
-- `/partners/` — sponsorship/resource contributions, value, milestone reporting
-- `/teams/` — team profile, delivery requirements, participant journey
-- `/enterprise/` — adoption, deployments, training, and acceptance
-- `/research/` — research questions, education, and collaboration units
-- `/resources/` — original presentation download and detailed planning handbook
-- `/involve/` — local-only collaboration brief composer with copy/download
-- `/directions/` — actual screenshots, palettes, references, and three video prompts
+- `/` — event identity, purpose, US$10,000 team grand prize, 168-hour format, three applications, participation paths.
+- `/challenge/` — two stages, shared EdgePod platform, three required applications and deliverables, FAQ.
+- `/resources/` — formal 100-point assessment, optional platform engineering bonus capped at 20 across the event, detailed framework, current source download.
+- `/teams/` — captain-led applications, individual registration and teammate matching, teams of three or more, participant journey and prize conditions.
+- `/partners/`, `/enterprise/`, `/research/` — resource sponsorship, enterprise scenarios and projects, research and education.
+- `/ecosystem/` — continuing Testbed, Benchmark, white papers and standards, open-source solutions, training and enterprise projects; relative 90-day plan after all team windows.
+- `/involve/` — participation guidance, official event channels and local brief composer.
+- `/directions/` and `/chinese-type.html` — retained visual and typography comparison pages.
 
-## Design and language
+The homepage hero keeps the two-column layout with the event name, one short sentence, three task labels, key facts and two links. Participant requirements, platform context and scoring details are in the sections below. The intro copy and right-hand facts panel are separate elements, so a later video treatment can keep the event text and links. Below the hero, the six participant topics appear in a glass sidebar and a live preview pane. The first topic is visible immediately. Mouse hover previews another topic after a short delay; moving into the pane preserves the selection. Click, keyboard arrows/Home/End, and previous/next buttons also work. Phones show a compact icon grid with tap selection. Sponsorship stays outside the six participant topics. A small React island uses liquid-gooey for the spring-driven merged indicator, while text remains crisp. Reduced-motion users receive a static indicator and no CSS ambient or panel animations. Legacy section links select the corresponding preview. The homepage states the full Chinese and English event name prominently. Chinese is the default; `?lang=en` selects English. Navigation preserves language and visual choices.
 
-Use `?design=cobalt`, `?design=acid`, or `?design=iris`. Use `&lang=en` or `&lang=zh`. Navigation preserves both values, and the browser remembers the selection when storage is available.
+## Rules and content boundaries
 
-The design dock switches between Electric Cobalt, Acid Signal, and Sky Editorial. All palettes exclude orange. The original transparent logo is retained; the dark version uses CSS inversion. Direction 03 is now the selected default: sky blue (#8AE6FF), deep ink (#102C3A), porcelain (#F6FAFA), pale ice (#E4F5FA), and marine (#28667C). Headline fonts are self-hosted with their licenses; body type uses Google Fonts with system fallbacks. Add `&type=michroma` (default), `&type=unbounded`, or `&type=syncopate` to compare naturally extended faces. The design board includes all three type specimens.
+Each team has 168 hours. Phase one is 25 formal points; phase two comprises three required applications worth 25 each: editable PPT, financial analysis and visualization, and Deep Research. Per application, quality is 15 points, qualified efficiency 6, and reproduction/evidence 4. Optional reusable platform improvements earn up to 20 additional points overall, under separate acceptance and isolated offline work. The team grand prize is US$10,000 for one winner, subject to formal qualification, quality, safety and evidence requirements.
 
-The hero is an original procedural canvas sculpture with pause/play and reduced-motion support. It is not an AI-generated video. Generation-ready video concepts and delivery guidance are on the design directions page.
+Teams can have three or more members. The first edition plans to select five teams for sequential platform windows. Dates, selection, platform calendar, detailed technical rules and appeals remain subject to organizing committee announcements at `https://www.gaac.org/`. No registration backend or unannounced dates are invented. The brief composer runs locally and does not submit a registration.
 
-## Content boundaries
+The original `OAIC_Challenge_Pitch_Executive_V1.3.pptx` is explicitly archived and does not define the current scoring or registration rules.
 
-Planning targets remain labeled as proposals. No confirmed dates, prizes, partners, testimonials, customers, benchmark results, or production capabilities have been invented. The 25/75 stage split is preserved; phase-two details remain subject to pre-event calibration and freezing.
+## Visual identity
 
-The participation page generates a text brief entirely within the browser. It does not register a team or submit personal information, and there is no backend. Official contact is linked to `oaic.ai` without inventing an email address.
+Selected direction: Sky Editorial (`design=iris`) with sky blue #8AE6FF, deep ink #102C3A, porcelain #F6FAFA, pale ice #E4F5FA and marine #28667C. All palettes exclude orange. Review options `design=cobalt` and `design=acid` remain available. The design dock appears only on `/directions/` or with `review=1`.
+
+English titles default to Michroma, with `type=unbounded` and `type=syncopate` alternatives. Chinese headings default to native wide Chill K Sans; `cn=system` selects system Chinese type. Body text remains readable system Chinese/DM Sans. Font licenses are included in `dist/assets/fonts/`.
+
+Chill K Sans WOFF2 is subsetted to current site text from [the author's source](https://github.com/Warren2060/ChillKSans). Regenerate the subset for new Chinese headings. The original GAAC mark is retained. Supplied OAIC light/dark PNGs are unmodified; every OAIC logo links to `https://www.oaic.ai/?lang=zh` or `?lang=en`, matching the current language. The GAAC logo returns to the event homepage.
+
+The homepage uses a compact event facts panel instead of the earlier abstract canvas sculpture. The sculpture source is retained for optional future use. Video concepts on the design page are generation briefs, not generated videos.
 
 ## Hosting
 
-`.openai/hosting.json` configures the private Sites deployment. Publish `dist/` as static assets. Each route has its own `index.html` shell; application content is rendered by `app.js`. Original source deck: `dist/assets/OAIC_Challenge_Pitch_Executive_V1.3.pptx`.
+`.openai/hosting.json` retains the existing Sites project identity and publishes `dist/` as static assets. Preserve its existing access audience. `app.js` handles navigation and UI; `event-pages.js` contains the current bilingual public event content. Each route has an HTML shell with event-specific title and description.
 
-## Chinese title type and OAIC identity
+## Liquid glass UI and icons
 
-Chinese headings default to a native wide face, Chill K Sans, with Michroma for Latin characters. Use `&cn=chill` (default) or `&cn=system` to compare against the previous system Chinese type. The body remains system Chinese type. A focused comparison is available at `/chinese-type.html`.
+`src/liquid-guide.jsx` supplies the hover preview and real `Liquid` / `Liquid.Item` animation. `dist/glass.css` supplies translucent surfaces, backdrop blur, highlights and restrained motion in the existing sky palette. `scripts/build-ui.mjs` bundles this island with esbuild; the rest of the site remains static JavaScript. The six full content bodies are retained in the initial markup, with a readable expanded fallback if the island cannot load.
 
-The Chinese webfont is a WOFF2 subset covering current site content, derived from [the author's source](https://github.com/Warren2060/ChillKSans). Its original SIL OFL 1.1 license is included at `dist/assets/fonts/chill-k-sans-LICENSE.txt`. Extend the subset or allow system fallback when adding new Chinese headings. The secondary author reference for broader width options is [Glow Sans](https://github.com/welai/glow-sans); it is not embedded in the current preview.
-
-The provided original OAIC light/dark PNGs are used without recoloring for the initiative credit and footer. GAAC retains its separate event mark at `dist/assets/gaac-logo.png`; the older `oaic-logo.png` path remains a compatibility alias for GAAC.
+Icons use `lucide-static` and are served as selected SVG masks. Lucide ISC/MIT and liquid-gooey/React notices are retained in `dist/assets/`; no visible footer icon credit is needed. Registration and team formation are marked as coming soon. The previous/next controls remain above the animated content, independent of panel height.
