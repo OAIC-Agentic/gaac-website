@@ -51,16 +51,15 @@ Icons use `lucide-static` and are served as selected SVG masks. Lucide ISC/MIT a
 
 Public domain: https://gaac.gosim.org/.
 Repository: https://github.com/gosimfoundation/gaac-website.
-GitHub Pages serves the root of the `gh-pages` branch. The custom domain is retained in `dist/CNAME`; `dist/.nojekyll` disables Jekyll processing.
+GitHub Pages publishes through [Deploy GAAC to GitHub Pages](../.github/workflows/deploy-pages.yml). Every push to `main` installs the locked dependencies, checks JavaScript, builds the UI, and deploys only `oaic-challenge/dist/`. GitHub Pages must use **GitHub Actions** as its publishing source, and the `github-pages` environment must allow deployments from `main`. The custom domain remains configured in Pages settings and in `dist/CNAME`; `dist/.nojekyll` disables Jekyll processing.
 
-After committing changes to `main`, publish the static files from the repository root:
+After committing changes to `main`, push from the repository root:
 
 ```sh
 npm run check
 git push origin main
-git subtree split --prefix=oaic-challenge/dist -b codex/pages-release
-git push origin codex/pages-release:gh-pages
-git branch -D codex/pages-release
 ```
+
+Wait for the [deployment workflow](https://github.com/gosimfoundation/gaac-website/actions/workflows/deploy-pages.yml) to succeed before confirming publication. The workflow also supports **Run workflow** for a manual redeployment. The former `gh-pages` branch is no longer the publishing source.
 
 The existing OAIC deployment is separate; publishing here does not redirect or remove `www.oaic.ai/gaac/`.
