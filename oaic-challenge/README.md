@@ -23,7 +23,7 @@ The homepage hero keeps the two-column layout with the event name, one short sen
 
 Each team has 168 hours. Phase one is 25 formal points; phase two comprises three required applications worth 25 each: editable PPT, financial analysis and visualization, and Deep Research. Per application, quality is 15 points, qualified efficiency 6, and reproduction/evidence 4. Optional reusable platform improvements earn up to 20 additional points overall, under separate acceptance and isolated offline work. The team grand prize is US$10,000 for one winner, subject to formal qualification, quality, safety and evidence requirements.
 
-Teams can have three or more members. The first edition plans to select five teams for sequential platform windows. Dates, selection, platform calendar, detailed technical rules and appeals remain subject to organizing committee announcements at `https://www.gaac.org/`. No registration backend or unannounced dates are invented. The brief composer runs locally and does not submit a registration.
+Teams can have three or more members. The first edition plans to select five teams for sequential platform windows. Dates, selection, platform calendar, detailed technical rules and appeals remain subject to organizing committee announcements at `https://gaac.gosim.org/`. No registration backend or unannounced dates are invented. The brief composer runs locally and does not submit a registration.
 
 The original `OAIC_Challenge_Pitch_Executive_V1.3.pptx` is explicitly archived and does not define the current scoring or registration rules.
 
