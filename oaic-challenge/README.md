@@ -46,3 +46,21 @@ The homepage uses a compact event facts panel instead of the earlier abstract ca
 `src/liquid-guide.jsx` supplies the hover preview and real `Liquid` / `Liquid.Item` animation. `dist/glass.css` supplies translucent surfaces, backdrop blur, highlights and restrained motion in the existing sky palette. `scripts/build-ui.mjs` bundles this island with esbuild; the rest of the site remains static JavaScript. The six full content bodies are retained in the initial markup, with a readable expanded fallback if the island cannot load.
 
 Icons use `lucide-static` and are served as selected SVG masks. Lucide ISC/MIT and liquid-gooey/React notices are retained in `dist/assets/`; no visible footer icon credit is needed. Registration and team formation are marked as coming soon. The previous/next controls remain above the animated content, independent of panel height.
+
+## GitHub Pages production
+
+Public domain: https://gaac.gosim.org/.
+Repository: https://github.com/gosimfoundation/gaac-website.
+GitHub Pages serves the root of the `gh-pages` branch. The custom domain is retained in `dist/CNAME`; `dist/.nojekyll` disables Jekyll processing.
+
+After committing changes to `main`, publish the static files from the repository root:
+
+```sh
+npm run check
+git push origin main
+git subtree split --prefix=oaic-challenge/dist -b codex/pages-release
+git push origin codex/pages-release:gh-pages
+git branch -D codex/pages-release
+```
+
+The existing OAIC deployment is separate; publishing here does not redirect or remove `www.oaic.ai/gaac/`.
