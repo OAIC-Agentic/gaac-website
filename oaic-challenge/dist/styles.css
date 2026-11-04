@@ -45,7 +45,7 @@ html[lang="zh-CN"] .iris .hero h1,html[lang="zh-CN"][data-type] .iris .hero h1{f
 @media(max-width:620px){.brand-by .by-label{font-size:6px;margin-bottom:3px}.brand .brand-by .oaic-mark{width:74px}.footer-brand .oaic-mark{width:175px}}
 
 /* Native Chinese wide-face outlines; Latin headings keep the selected extended face. */
-@font-face{font-family:'GAAC Chill K';font-style:normal;font-weight:500;font-display:swap;src:url('/assets/fonts/chill-k-sans-web.woff2?v=gaac-refine-20261102g3') format('woff2')}
+@font-face{font-family:'GAAC Chill K';font-style:normal;font-weight:500;font-display:swap;src:url('/assets/fonts/chill-k-sans-web.woff2?v=gaac-minimal-20261104a') format('woff2')}
 html[lang="zh-CN"]{--cn-display:'GAAC Chill K','PingFang SC','Microsoft YaHei',sans-serif}
 html[lang="zh-CN"][data-cn="system"]{--cn-display:'PingFang SC','Microsoft YaHei',sans-serif}
 html[lang="zh-CN"][data-theme] .hero h1,html[lang="zh-CN"][data-theme] .page-hero h1,html[lang="zh-CN"][data-theme] .section h2,html[lang="zh-CN"][data-theme] .manifesto h2,html[lang="zh-CN"][data-theme] .article-section h2,html[lang="zh-CN"][data-theme] .cta-section h2,html[lang="zh-CN"][data-theme] .design-intro h1{font-family:var(--display),var(--cn-display);font-weight:500}

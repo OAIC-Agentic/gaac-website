@@ -5,15 +5,16 @@
   "description": "Grand Agentic AI Challenge — 智能体大奖赛：赛事招募、考试评估与产业合作。",
   "scripts": {
     "dev": "node scripts/dev.mjs",
-    "check": "node --check dist/app.js && node --check dist/event-pages.js && node --check dist/art.js && node --check scripts/build-ui.mjs && node --check scripts/dev.mjs",
+    "check": "node --check dist/app.js && node --check dist/event-pages.js && node --check dist/art.js && node --check scripts/build-ui.mjs && node --check scripts/dev.mjs && node --check src/hero/index.js && node --check src/hero/geometry.js && node --check src/hero/timeline.js && node --check src/hero/motion.js && node --check src/hero/lighting.js && node --check src/hero/focus.js",
     "build": "node scripts/build-ui.mjs"
   },
   "type": "module",
   "dependencies": {
     "liquid-gooey": "0.2.2",
+    "lucide-static": "1.66.0",
     "react": "^19.2.0",
     "react-dom": "^19.2.0",
-    "lucide-static": "1.66.0"
+    "three": "^0.187.0"
   },
   "devDependencies": {
     "esbuild": "0.28.2"

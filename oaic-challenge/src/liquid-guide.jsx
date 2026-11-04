@@ -46,7 +46,6 @@ function Guide({steps,lang,initialId,onSelect}){
   function advance(next){choose(next);}
   return <div className="liquid-guide-layout">
     <aside className="glass-steps-rail glass-surface">
-      <div className="glass-rail-caption"><Icon name="eye"/><span>{t('EXPLORE THE CHALLENGE','了解这场比赛')}</span><span className="rail-caption-count">01—06</span></div>
       <div className="glass-step-list" ref={listRef} role="tablist" aria-label={t('Participant guide topics','参赛指南主题')} aria-orientation={mobile?'horizontal':'vertical'} onPointerLeave={()=>clearTimeout(hoverTimer.current)}>
         <LiquidMarker position={position} reduced={reduced}/>
         {steps.map((step,index)=><button key={step.id} id={'tab-'+step.id} ref={node=>buttonRefs.current[index]=node} className={'glass-step '+(index===active?'is-active':'')} type="button" role="tab" aria-selected={index===active} aria-label={step.title} aria-controls="glass-guide-panel" tabIndex={index===active?0:-1} onPointerEnter={()=>hover(index)} onFocus={()=>choose(index)} onClick={()=>choose(index)} onKeyDown={e=>keyboard(e,index)}>
@@ -58,9 +57,8 @@ function Guide({steps,lang,initialId,onSelect}){
     </aside>
     <section className="glass-guide-panel glass-surface" id="glass-guide-panel" ref={panelRef} role="tabpanel" aria-labelledby={'tab-'+selected.id} tabIndex={0}>
       <div className="glass-panel-glow" aria-hidden="true"/>
-      <div className="glass-panel-navigation"><button type="button" onClick={()=>advance(active-1)} disabled={active===0}><Icon name="arrow-small-left"/>{t('Previous','上一步')}</button><div className="glass-progress" aria-hidden="true">{steps.map((s,i)=><span key={s.id} className={i===active?'active':''}/>)}</div><button type="button" onClick={()=>advance(active+1)} disabled={active===steps.length-1}>{t('Next','下一步')}<Icon name="arrow-small-right"/></button></div>
+      <div className="glass-panel-navigation"><button type="button" onClick={()=>advance(active-1)} disabled={active===0}><Icon name="arrow-small-left"/>{t('Previous','上一步')}</button><button type="button" onClick={()=>advance(active+1)} disabled={active===steps.length-1}>{t('Next','下一步')}<Icon name="arrow-small-right"/></button></div>
       <div className="glass-panel-content" key={selected.id}>
-        <div className="glass-panel-kicker"><span className="glass-panel-icon"><Icon name={stepIcons[active]}/></span><span>{t('PARTICIPANT GUIDE','参赛指南')}<strong>0{active+1} / 06</strong></span></div>
         <h3 className="glass-panel-title">{selected.title}</h3>
         <p className="glass-panel-summary">{selected.description}</p>
         <div className={'glass-content glass-content-'+selected.id} dangerouslySetInnerHTML={{__html:selected.body}}/>

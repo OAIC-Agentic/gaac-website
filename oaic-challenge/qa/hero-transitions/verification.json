@@ -1,0 +1,20 @@
+{
+  "date": "2026-11-05",
+  "fix": "Keep opaque surfaces ahead of transmissive glass with a fixed blend setup; animate opacity without changing render queues, depth writes or shader variants.",
+  "browserRegression": {"passed": 48, "failed": 0, "report": "browser-checks.json"},
+  "transitionMeasurements": {
+    "scenarios": ["enter finance", "exit finance", "enter compute", "exit compute", "enter ppt", "exit ppt"],
+    "shaderCompilesDuringTransitionsBefore": 6,
+    "shaderCompilesDuringTransitionsAfter": 0,
+    "afterProgramCount": 21,
+    "afterP95FrameGapMsRange": [17.6, 18.2],
+    "afterMaximumFrameGapMs": 25.3,
+    "before": "before-performance.json",
+    "after": "after-performance.json",
+    "scope": "Local desktop browser measurement without screenshot encoding; not a guarantee for every device."
+  },
+  "visualEvidence": "after-frames.json lists separate captured exit frames; the EdgePod roof remains present throughout the return.",
+  "build": "passed",
+  "syntaxChecks": "passed",
+  "whitespaceCheck": "passed"
+}

@@ -1,0 +1,72 @@
+[
+  {
+    "name": "steady",
+    "frames": 72,
+    "compiles": 0,
+    "programsBefore": 21,
+    "programsAfter": 21,
+    "p95FrameGapMs": 17.899999998509884,
+    "maxFrameGapMs": 18.699999999254942,
+    "clockAdvanced": 1.18
+  },
+  {
+    "name": "enter finance",
+    "frames": 83,
+    "compiles": 0,
+    "programsBefore": 21,
+    "programsAfter": 21,
+    "p95FrameGapMs": 17.699999999254942,
+    "maxFrameGapMs": 23.900000002235174,
+    "clockAdvanced": 1.37
+  },
+  {
+    "name": "exit finance",
+    "frames": 84,
+    "compiles": 0,
+    "programsBefore": 21,
+    "programsAfter": 21,
+    "p95FrameGapMs": 17.699999999254942,
+    "maxFrameGapMs": 18.5,
+    "clockAdvanced": 1.38
+  },
+  {
+    "name": "enter compute",
+    "frames": 85,
+    "compiles": 0,
+    "programsBefore": 21,
+    "programsAfter": 21,
+    "p95FrameGapMs": 18.199999999254942,
+    "maxFrameGapMs": 18.599999997764826,
+    "clockAdvanced": 1.4000000000000004
+  },
+  {
+    "name": "exit compute",
+    "frames": 83,
+    "compiles": 0,
+    "programsBefore": 21,
+    "programsAfter": 21,
+    "p95FrameGapMs": 18,
+    "maxFrameGapMs": 25.300000000745058,
+    "clockAdvanced": 1.37
+  },
+  {
+    "name": "enter ppt",
+    "frames": 84,
+    "compiles": 0,
+    "programsBefore": 21,
+    "programsAfter": 21,
+    "p95FrameGapMs": 17.699999999254942,
+    "maxFrameGapMs": 17.900000002235174,
+    "clockAdvanced": 1.379999999999999
+  },
+  {
+    "name": "exit ppt",
+    "frames": 84,
+    "compiles": 0,
+    "programsBefore": 21,
+    "programsAfter": 21,
+    "p95FrameGapMs": 17.599999997764826,
+    "maxFrameGapMs": 18.5,
+    "clockAdvanced": 1.379999999999999
+  }
+]

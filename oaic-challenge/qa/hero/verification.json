@@ -1,0 +1,46 @@
+{
+  "build": "npm --prefix oaic-challenge run build: passed",
+  "check": "npm run check: passed",
+  "browserAssertions": 33,
+  "browserAssertionsPassed": 33,
+  "autoCycleObservation": {
+    "interaction": "none",
+    "observedSeconds": [
+      35.08,
+      84.12
+    ],
+    "phases": [
+      "ppt",
+      "finance",
+      "research",
+      "together"
+    ],
+    "samples": "cycles.json"
+  },
+  "responsiveViewports": {
+    "desktop": [
+      1440,
+      900
+    ],
+    "mobile": [
+      390,
+      1000
+    ]
+  },
+  "languages": [
+    "zh",
+    "en"
+  ],
+  "mobileMeasuredFPS": 30.04,
+  "interactionChecks": [
+    "desktop drag and inertia",
+    "island focus and reset",
+    "keyboard pause/resume",
+    "native scroll over canvas",
+    "synthetic horizontal and vertical touch intent"
+  ],
+  "guideStepsPassed": 6,
+  "limitations": [
+    "Mobile layout and scrolling verified in desktop browser viewport; no physical phone available."
+  ]
+}

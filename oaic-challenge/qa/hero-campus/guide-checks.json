@@ -1,0 +1,32 @@
+[
+  {
+    "name": "比赛要做什么？",
+    "selected": "true",
+    "panel": "tab-tasks"
+  },
+  {
+    "name": "我能参加吗？",
+    "selected": "true",
+    "panel": "tab-eligibility"
+  },
+  {
+    "name": "怎么报名和组队？",
+    "selected": "true",
+    "panel": "tab-registration"
+  },
+  {
+    "name": "比赛怎么进行？",
+    "selected": "true",
+    "panel": "tab-schedule"
+  },
+  {
+    "name": "怎么评分，能获得什么？",
+    "selected": "true",
+    "panel": "tab-scoring"
+  },
+  {
+    "name": "比赛结束后有哪些机会？",
+    "selected": "true",
+    "panel": "tab-after"
+  }
+]

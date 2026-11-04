@@ -1,0 +1,58 @@
+[
+  {
+    "elapsed": "35.08",
+    "frames": "4199",
+    "heroWorld": "",
+    "phase": "together",
+    "state": "ready"
+  },
+  {
+    "elapsed": "40.13",
+    "frames": "4806",
+    "heroWorld": "",
+    "phase": "ppt",
+    "state": "ready"
+  },
+  {
+    "elapsed": "45.19",
+    "frames": "5413",
+    "heroWorld": "",
+    "phase": "finance",
+    "state": "ready"
+  },
+  {
+    "elapsed": "50.26",
+    "frames": "6021",
+    "heroWorld": "",
+    "phase": "research",
+    "state": "ready"
+  },
+  {
+    "elapsed": "68.96",
+    "frames": "8265",
+    "heroWorld": "",
+    "phase": "finance",
+    "state": "ready"
+  },
+  {
+    "elapsed": "74.02",
+    "frames": "8872",
+    "heroWorld": "",
+    "phase": "research",
+    "state": "ready"
+  },
+  {
+    "elapsed": "79.05",
+    "frames": "9476",
+    "heroWorld": "",
+    "phase": "together",
+    "state": "ready"
+  },
+  {
+    "elapsed": "84.12",
+    "frames": "10084",
+    "heroWorld": "",
+    "phase": "ppt",
+    "state": "ready"
+  }
+]

@@ -16,10 +16,11 @@ export async function prepareAssets(){
   }
   await writeFile(resolve(out,'ui-icons.css'),selected);
   await copyFile(resolve(vendor,'LICENSE'),resolve(out,'lucide-LICENSE.txt'));
-  const notices=[];for(const pkg of ['liquid-gooey','react','react-dom'])notices.push(pkg+'\n'+await readFile(resolve(root,'node_modules',pkg,'LICENSE'),'utf8'));
+  const notices=[];for(const pkg of ['liquid-gooey','react','react-dom','three'])notices.push(pkg+'\n'+await readFile(resolve(root,'node_modules',pkg,'LICENSE'),'utf8'));
   await writeFile(resolve(out,'ui-licenses.txt'),notices.join('\n\n'));
 }
 export const buildOptions={absWorkingDir:root,entryPoints:['src/liquid-guide.jsx'],outfile:'dist/assets/liquid-guide.js',bundle:true,format:'esm',platform:'browser',jsx:'automatic',target:['es2020'],minify:true,charset:'utf8',legalComments:'linked',define:{'process.env.NODE_ENV':'"production"'},logLevel:'info'};
-export async function buildUI(){await prepareAssets();await build(buildOptions);}
-export async function watchUI(){await prepareAssets();const ctx=await context(buildOptions);await ctx.watch();return ctx;}
+export const heroBuildOptions={...buildOptions,entryPoints:['src/hero/index.js'],outfile:'dist/assets/hero-world.js'};
+export async function buildUI(){await prepareAssets();await Promise.all([build(buildOptions),build(heroBuildOptions)]);}
+export async function watchUI(){await prepareAssets();const contexts=await Promise.all([context(buildOptions),context(heroBuildOptions)]);await Promise.all(contexts.map(ctx=>ctx.watch()));return {dispose:()=>Promise.all(contexts.map(ctx=>ctx.dispose()))};}
 if(process.argv[1]&&resolve(process.argv[1])===fileURLToPath(import.meta.url))await buildUI();

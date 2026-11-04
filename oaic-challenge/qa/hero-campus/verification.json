@@ -1,0 +1,19 @@
+{
+  "design": "A — Blue glass collaboration campus",
+  "date": "2026-11-05",
+  "preview": "http://localhost:4173/?design=iris&lang=zh&type=michroma&cn=chill",
+  "build": "passed",
+  "syntaxChecks": "passed",
+  "gitDiffWhitespace": "passed",
+  "browserChecks": {"passed": 34, "failed": 0, "report": "browser-checks.json"},
+  "idleObservation": {"elapsedSeconds": 75.9, "automatic": true, "report": "idle-observation.json"},
+  "responsive": [
+    {"width": 1440, "height": 960, "languages": ["zh", "en"], "layout": "passed"},
+    {"width": 390, "height": 1000, "languages": ["zh", "en"], "layout": "passed", "horizontalOverflow": false}
+  ],
+  "mobileScroll": {"before": 0, "after": 980, "canvasTouchAction": "pan-y pinch-zoom"},
+  "guideTabs": {"passed": 6, "report": "guide-checks.json"},
+  "manualControls": ["HTML EdgePod focus", "reset overview", "keyboard pause/resume", "Chinese/English remount", "OAIC language links"],
+  "deviceLimit": "Responsive browser viewport; no physical phone. Touch direction checked with synthetic PointerEvents.",
+  "console": "No production-page errors observed. Deliberate WebGL-failure checks emit expected warnings."
+}

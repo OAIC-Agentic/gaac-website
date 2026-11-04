@@ -1,0 +1,12 @@
+{
+  "startElapsed": 6.35,
+  "middleElapsed": 25.83,
+  "end": {
+    "elapsed": "75.90",
+    "frames": "4496",
+    "heroWorld": "",
+    "phase": "concurrent",
+    "state": "ready"
+  },
+  "interaction": "none"
+}

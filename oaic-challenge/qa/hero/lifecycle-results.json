@@ -1,0 +1,140 @@
+[
+  {
+    "label": "continuous loop progress/0",
+    "pass": true
+  },
+  {
+    "label": "continuous loop activity/0",
+    "pass": true
+  },
+  {
+    "label": "continuous loop progress/5",
+    "pass": true
+  },
+  {
+    "label": "continuous loop activity/5",
+    "pass": true
+  },
+  {
+    "label": "continuous loop progress/10",
+    "pass": true
+  },
+  {
+    "label": "continuous loop activity/10",
+    "pass": true
+  },
+  {
+    "label": "continuous loop progress/15",
+    "pass": true
+  },
+  {
+    "label": "continuous loop activity/15",
+    "pass": true
+  },
+  {
+    "label": "real WebGL automatic start",
+    "pass": true,
+    "detail": "1.82"
+  },
+  {
+    "label": "pause stops rendering",
+    "pass": true
+  },
+  {
+    "label": "resume continues rendering",
+    "pass": true
+  },
+  {
+    "label": "offscreen stops rendering",
+    "pass": true
+  },
+  {
+    "label": "intersection resume",
+    "pass": true
+  },
+  {
+    "label": "background stops rendering",
+    "pass": true
+  },
+  {
+    "label": "foreground resume",
+    "pass": true
+  },
+  {
+    "label": "vertical touch leaves exploration unchanged",
+    "pass": true
+  },
+  {
+    "label": "horizontal touch enters exploration",
+    "pass": true
+  },
+  {
+    "label": "reset returns to overview",
+    "pass": true
+  },
+  {
+    "label": "unmount cancels frames",
+    "pass": true
+  },
+  {
+    "label": "GPU resources disposed",
+    "pass": true,
+    "detail": {
+      "geometry": 483,
+      "material": 126,
+      "texture": 3
+    }
+  },
+  {
+    "label": "reduced motion renders a still frame",
+    "pass": true
+  },
+  {
+    "label": "no WebGL uses cover",
+    "pass": true
+  },
+  {
+    "label": "fallback image available",
+    "pass": true
+  },
+  {
+    "label": "context loss falls back safely",
+    "pass": true
+  },
+  {
+    "label": "route /challenge/",
+    "pass": true
+  },
+  {
+    "label": "route /teams/",
+    "pass": true
+  },
+  {
+    "label": "route /resources/",
+    "pass": true
+  },
+  {
+    "label": "route /partners/",
+    "pass": true
+  },
+  {
+    "label": "route /enterprise/",
+    "pass": true
+  },
+  {
+    "label": "route /research/",
+    "pass": true
+  },
+  {
+    "label": "route /ecosystem/",
+    "pass": true
+  },
+  {
+    "label": "route /involve/",
+    "pass": true
+  },
+  {
+    "label": "route /directions/",
+    "pass": true
+  }
+]

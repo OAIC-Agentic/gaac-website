@@ -1,0 +1,993 @@
+{
+  "date": "2026-11-05",
+  "scope": "Nine public page templates in English and Chinese; shared navigation/footer manually reviewed. Design explorations, source documents, and concurrent Three.js hero implementation excluded.",
+  "method": "Unslop default two-pass rewrite: read source, diagnose exact spans, repair only confirmed findings, then validate. English metrics are candidates, not proof of authorship. Chinese reviewed manually.",
+  "edits": [
+    {
+      "location": "partners/long-term",
+      "category": "vague evaluation",
+      "before": "Support that can keep producing value.",
+      "after": "Support for reusable post-event outputs.",
+      "reason": "Value does not identify the outcomes. The section names reusable competition outputs and links to the post-event plan."
+    },
+    {
+      "location": "partners/long-term",
+      "category": "opaque metaphor",
+      "before": "让投入持续沉淀为公共成果。",
+      "after": "支持可复用的赛后公共成果。",
+      "reason": "投资沉淀 does not explain the support. The section describes reusable public outputs after the event."
+    },
+    {
+      "location": "ecosystem/roadmap",
+      "category": "vague heading",
+      "before": "A sequence that continues after the last team.",
+      "after": "Work planned after all teams finish.",
+      "reason": "Sequence does not identify the work, and last team omits completion. The source specifies a work plan after all teams finish."
+    },
+    {
+      "location": "ecosystem/roadmap",
+      "category": "missing object",
+      "before": "从最后一队完成比赛开始，继续推进。",
+      "after": "全部队伍完赛后的工作安排。",
+      "reason": "继续推进 leaves the object unstated. The heading introduces the post-event work schedule."
+    },
+    {
+      "location": "research/questions",
+      "category": "opaque connection",
+      "before": "Connect user experience and technical capability.",
+      "after": "Study user experience and technical capability.",
+      "reason": "Connect does not identify the research action. The section lists evaluation research and joint experiments; the existing Chinese wording already states this clearly."
+    },
+    {
+      "location": "research/outputs",
+      "category": "vague transformation",
+      "before": "Evidence that can become public knowledge.",
+      "after": "White papers and reports based on competition evidence.",
+      "reason": "The headline hides the publishing mechanism. The paragraph names white papers and reports based on evidence, with permissions retained."
+    },
+    {
+      "location": "research/outputs",
+      "category": "vague transformation",
+      "before": "把实测证据转为公共知识。",
+      "after": "基于实测证据编写白皮书与报告。",
+      "reason": "转为公共知识 hides the authors' action. The source explicitly describes co-authoring white papers and reports based on measured evidence."
+    },
+    {
+      "location": "research/education",
+      "category": "opaque connection",
+      "before": "让课程与实训连接真实交付。",
+      "after": "用真实交付成果开展课程与实训。",
+      "reason": "连接 does not describe the teaching method. The paragraph specifies courses and exercises using real artifacts and verifiable results."
+    },
+    {
+      "location": "involve/partners",
+      "category": "empty abstraction",
+      "before": "支持赛事，也支持持续共建。",
+      "after": "支持赛事与共享资源。",
+      "reason": "持续共建 does not identify what is supported. Shared resources are named in the corresponding English text and following paragraph."
+    }
+  ],
+  "invariants": {
+    "only_confirmed_heading_sentences_changed": true,
+    "all_other_event_pages_bytes_preserved": true,
+    "number_of_heading_locations": 6,
+    "number_of_literal_replacements": 9,
+    "preservation_checks_passed": 18,
+    "banned_phrase_violations_after": 0,
+    "hero_implementation_preserved": true
+  },
+  "results": [
+    {
+      "page": "challenge",
+      "language": "en",
+      "changed": false,
+      "preservation": {
+        "exit": 0,
+        "passed": true,
+        "total_constraints": 15,
+        "preserved": 15,
+        "missing_count": 0,
+        "missing": [],
+        "warnings": []
+      },
+      "banned_phrase_violations": 0,
+      "diff": {
+        "exit": 0,
+        "original_word_count": 1148,
+        "transformed_word_count": 1148,
+        "similarity_ratio": 1.0,
+        "change_percentage": 0.0,
+        "words_added": 0,
+        "words_removed": 0,
+        "words_changed": 0,
+        "excessive_change": false,
+        "flags": []
+      },
+      "scanner_review": [
+        {
+          "tool": "silhouette_scan",
+          "metric": "silhouette_penalty",
+          "classification": "protected source",
+          "reason": "A page covers one defined topic across its introduction, detailed requirements, and relevant links. Shared domain vocabulary is necessary and does not confirm a recap or scaffold defect."
+        },
+        {
+          "tool": "silhouette_scan",
+          "metric": "callback_content",
+          "classification": "protected source",
+          "reason": "A page covers one defined topic across its introduction, detailed requirements, and relevant links. Shared domain vocabulary is necessary and does not confirm a recap or scaffold defect."
+        },
+        {
+          "tool": "readability_metrics",
+          "flag": "High reading level (15.1 grade)",
+          "classification": "protected source",
+          "reason": "Technical terms, explicit eligibility/rule language, and separated UI elements are necessary here. No confirmed defect in the sentences associated with this metric."
+        },
+        {
+          "tool": "readability_metrics",
+          "flag": "High word repetition (41.4%)",
+          "classification": "protected source",
+          "reason": "Technical terms, explicit eligibility/rule language, and separated UI elements are necessary here. No confirmed defect in the sentences associated with this metric."
+        },
+        {
+          "tool": "readability_metrics",
+          "flag": "Staccato cadence: 5 consecutive tiny sentences (anti-slop AI tell)",
+          "classification": "protected source",
+          "reason": "Technical terms, explicit eligibility/rule language, and separated UI elements are necessary here. No confirmed defect in the sentences associated with this metric."
+        }
+      ]
+    },
+    {
+      "page": "challenge",
+      "language": "zh",
+      "changed": false,
+      "preservation": {
+        "exit": 0,
+        "passed": true,
+        "total_constraints": 7,
+        "preserved": 7,
+        "missing_count": 0,
+        "missing": [],
+        "warnings": []
+      },
+      "banned_phrase_violations": 0,
+      "diff": {
+        "exit": 0,
+        "original_word_count": 533,
+        "transformed_word_count": 533,
+        "similarity_ratio": 1.0,
+        "change_percentage": 0.0,
+        "words_added": 0,
+        "words_removed": 0,
+        "words_changed": 0,
+        "excessive_change": false,
+        "flags": []
+      },
+      "scanner_review": [
+        {
+          "tool": "structure_scan",
+          "metric": "one_line_staccato",
+          "classification": "protected source",
+          "reason": "English sentence and word tokenization is not valid for Chinese; reviewed manually as headings and separated interface cards."
+        },
+        {
+          "tool": "readability_metrics",
+          "flag": "High reading level (115.8 grade)",
+          "classification": "protected source",
+          "reason": "English readability formulas and whitespace word counts are not meaningful for Chinese; manually reviewed."
+        },
+        {
+          "tool": "readability_metrics",
+          "flag": "Long average sentence length (305.0 words)",
+          "classification": "protected source",
+          "reason": "English readability formulas and whitespace word counts are not meaningful for Chinese; manually reviewed."
+        }
+      ]
+    },
+    {
+      "page": "ecosystem",
+      "language": "en",
+      "changed": true,
+      "preservation": {
+        "exit": 0,
+        "passed": true,
+        "total_constraints": 6,
+        "preserved": 6,
+        "missing_count": 0,
+        "missing": [],
+        "warnings": []
+      },
+      "banned_phrase_violations": 0,
+      "diff": {
+        "exit": 0,
+        "original_word_count": 423,
+        "transformed_word_count": 421,
+        "similarity_ratio": 0.986,
+        "change_percentage": 1.7,
+        "words_added": 0,
+        "words_removed": 0,
+        "words_changed": 7,
+        "excessive_change": false,
+        "flags": []
+      },
+      "scanner_review": [
+        {
+          "tool": "structure_scan",
+          "metric": "sentence_burstiness",
+          "classification": "protected source",
+          "reason": "Parallel reference sections list distinct participation roles or required work. The headings repaired below do not justify restructuring unrelated factual sentences."
+        },
+        {
+          "tool": "silhouette_scan",
+          "metric": "silhouette_penalty",
+          "classification": "protected source",
+          "reason": "A page covers one defined topic across its introduction, detailed requirements, and relevant links. Shared domain vocabulary is necessary and does not confirm a recap or scaffold defect."
+        },
+        {
+          "tool": "silhouette_scan",
+          "metric": "callback_content",
+          "classification": "protected source",
+          "reason": "A page covers one defined topic across its introduction, detailed requirements, and relevant links. Shared domain vocabulary is necessary and does not confirm a recap or scaffold defect."
+        },
+        {
+          "tool": "readability_metrics",
+          "flag": "High reading level (22.7 grade)",
+          "classification": "protected source",
+          "reason": "Technical terms, explicit eligibility/rule language, and separated UI elements are necessary here. No confirmed defect in the sentences associated with this metric."
+        },
+        {
+          "tool": "readability_metrics",
+          "flag": "High word repetition (24.5%)",
+          "classification": "protected source",
+          "reason": "Technical terms, explicit eligibility/rule language, and separated UI elements are necessary here. No confirmed defect in the sentences associated with this metric."
+        },
+        {
+          "tool": "readability_metrics",
+          "flag": "Long average sentence length (30.9 words)",
+          "classification": "protected source",
+          "reason": "Technical terms, explicit eligibility/rule language, and separated UI elements are necessary here. No confirmed defect in the sentences associated with this metric."
+        }
+      ]
+    },
+    {
+      "page": "ecosystem",
+      "language": "zh",
+      "changed": true,
+      "preservation": {
+        "exit": 0,
+        "passed": true,
+        "total_constraints": 3,
+        "preserved": 3,
+        "missing_count": 0,
+        "missing": [],
+        "warnings": []
+      },
+      "banned_phrase_violations": 0,
+      "diff": {
+        "exit": 0,
+        "original_word_count": 196,
+        "transformed_word_count": 194,
+        "similarity_ratio": 0.99,
+        "change_percentage": 1.5,
+        "words_added": 0,
+        "words_removed": 0,
+        "words_changed": 3,
+        "excessive_change": false,
+        "flags": []
+      },
+      "scanner_review": [
+        {
+          "tool": "structure_scan",
+          "metric": "one_line_staccato",
+          "classification": "protected source",
+          "reason": "English sentence and word tokenization is not valid for Chinese; reviewed manually as headings and separated interface cards."
+        },
+        {
+          "tool": "readability_metrics",
+          "flag": "High reading level (37.6 grade)",
+          "classification": "protected source",
+          "reason": "English readability formulas and whitespace word counts are not meaningful for Chinese; manually reviewed."
+        },
+        {
+          "tool": "readability_metrics",
+          "flag": "Long average sentence length (104.0 words)",
+          "classification": "protected source",
+          "reason": "English readability formulas and whitespace word counts are not meaningful for Chinese; manually reviewed."
+        }
+      ]
+    },
+    {
+      "page": "enterprise",
+      "language": "en",
+      "changed": false,
+      "preservation": {
+        "exit": 0,
+        "passed": true,
+        "total_constraints": 0,
+        "preserved": 0,
+        "missing_count": 0,
+        "missing": [],
+        "warnings": []
+      },
+      "banned_phrase_violations": 0,
+      "diff": {
+        "exit": 0,
+        "original_word_count": 311,
+        "transformed_word_count": 311,
+        "similarity_ratio": 1.0,
+        "change_percentage": 0.0,
+        "words_added": 0,
+        "words_removed": 0,
+        "words_changed": 0,
+        "excessive_change": false,
+        "flags": []
+      },
+      "scanner_review": [
+        {
+          "tool": "structure_scan",
+          "metric": "sentence_burstiness",
+          "classification": "protected source",
+          "reason": "Parallel reference sections list distinct participation roles or required work. The headings repaired below do not justify restructuring unrelated factual sentences."
+        },
+        {
+          "tool": "silhouette_scan",
+          "metric": "silhouette_penalty",
+          "classification": "protected source",
+          "reason": "A page covers one defined topic across its introduction, detailed requirements, and relevant links. Shared domain vocabulary is necessary and does not confirm a recap or scaffold defect."
+        },
+        {
+          "tool": "silhouette_scan",
+          "metric": "callback_content",
+          "classification": "protected source",
+          "reason": "A page covers one defined topic across its introduction, detailed requirements, and relevant links. Shared domain vocabulary is necessary and does not confirm a recap or scaffold defect."
+        },
+        {
+          "tool": "readability_metrics",
+          "flag": "High reading level (21.2 grade)",
+          "classification": "protected source",
+          "reason": "Technical terms, explicit eligibility/rule language, and separated UI elements are necessary here. No confirmed defect in the sentences associated with this metric."
+        },
+        {
+          "tool": "readability_metrics",
+          "flag": "Long average sentence length (29.9 words)",
+          "classification": "protected source",
+          "reason": "Technical terms, explicit eligibility/rule language, and separated UI elements are necessary here. No confirmed defect in the sentences associated with this metric."
+        }
+      ]
+    },
+    {
+      "page": "enterprise",
+      "language": "zh",
+      "changed": false,
+      "preservation": {
+        "exit": 0,
+        "passed": true,
+        "total_constraints": 0,
+        "preserved": 0,
+        "missing_count": 0,
+        "missing": [],
+        "warnings": []
+      },
+      "banned_phrase_violations": 0,
+      "diff": {
+        "exit": 0,
+        "original_word_count": 136,
+        "transformed_word_count": 136,
+        "similarity_ratio": 1.0,
+        "change_percentage": 0.0,
+        "words_added": 0,
+        "words_removed": 0,
+        "words_changed": 0,
+        "excessive_change": false,
+        "flags": []
+      },
+      "scanner_review": [
+        {
+          "tool": "structure_scan",
+          "metric": "one_line_staccato",
+          "classification": "protected source",
+          "reason": "English sentence and word tokenization is not valid for Chinese; reviewed manually as headings and separated interface cards."
+        },
+        {
+          "tool": "readability_metrics",
+          "flag": "High reading level (23.7 grade)",
+          "classification": "protected source",
+          "reason": "English readability formulas and whitespace word counts are not meaningful for Chinese; manually reviewed."
+        },
+        {
+          "tool": "readability_metrics",
+          "flag": "Long average sentence length (70.0 words)",
+          "classification": "protected source",
+          "reason": "English readability formulas and whitespace word counts are not meaningful for Chinese; manually reviewed."
+        }
+      ]
+    },
+    {
+      "page": "home",
+      "language": "en",
+      "changed": false,
+      "preservation": {
+        "exit": 0,
+        "passed": true,
+        "total_constraints": 15,
+        "preserved": 15,
+        "missing_count": 0,
+        "missing": [],
+        "warnings": []
+      },
+      "banned_phrase_violations": 0,
+      "diff": {
+        "exit": 0,
+        "original_word_count": 1147,
+        "transformed_word_count": 1147,
+        "similarity_ratio": 1.0,
+        "change_percentage": 0.0,
+        "words_added": 0,
+        "words_removed": 0,
+        "words_changed": 0,
+        "excessive_change": false,
+        "flags": []
+      },
+      "scanner_review": [
+        {
+          "tool": "structure_scan",
+          "metric": "one_line_staccato",
+          "classification": "protected source",
+          "reason": "Separate cards, headings, labels, and calls to action are short UI elements, not successive paragraphs of running prose."
+        },
+        {
+          "tool": "readability_metrics",
+          "flag": "High reading level (14.4 grade)",
+          "classification": "protected source",
+          "reason": "Technical terms, explicit eligibility/rule language, and separated UI elements are necessary here. No confirmed defect in the sentences associated with this metric."
+        },
+        {
+          "tool": "readability_metrics",
+          "flag": "4+ consecutive similar-length sentences",
+          "classification": "protected source",
+          "reason": "Technical terms, explicit eligibility/rule language, and separated UI elements are necessary here. No confirmed defect in the sentences associated with this metric."
+        },
+        {
+          "tool": "readability_metrics",
+          "flag": "High word repetition (44.1%)",
+          "classification": "protected source",
+          "reason": "Technical terms, explicit eligibility/rule language, and separated UI elements are necessary here. No confirmed defect in the sentences associated with this metric."
+        }
+      ]
+    },
+    {
+      "page": "home",
+      "language": "zh",
+      "changed": false,
+      "preservation": {
+        "exit": 0,
+        "passed": true,
+        "total_constraints": 10,
+        "preserved": 10,
+        "missing_count": 0,
+        "missing": [],
+        "warnings": []
+      },
+      "banned_phrase_violations": 0,
+      "diff": {
+        "exit": 0,
+        "original_word_count": 566,
+        "transformed_word_count": 566,
+        "similarity_ratio": 1.0,
+        "change_percentage": 0.0,
+        "words_added": 0,
+        "words_removed": 0,
+        "words_changed": 0,
+        "excessive_change": false,
+        "flags": []
+      },
+      "scanner_review": [
+        {
+          "tool": "structure_scan",
+          "metric": "one_line_staccato",
+          "classification": "protected source",
+          "reason": "English sentence and word tokenization is not valid for Chinese; reviewed manually as headings and separated interface cards."
+        },
+        {
+          "tool": "readability_metrics",
+          "flag": "High reading level (131.8 grade)",
+          "classification": "protected source",
+          "reason": "English readability formulas and whitespace word counts are not meaningful for Chinese; manually reviewed."
+        },
+        {
+          "tool": "readability_metrics",
+          "flag": "Long average sentence length (346.0 words)",
+          "classification": "protected source",
+          "reason": "English readability formulas and whitespace word counts are not meaningful for Chinese; manually reviewed."
+        }
+      ]
+    },
+    {
+      "page": "involve",
+      "language": "en",
+      "changed": false,
+      "preservation": {
+        "exit": 0,
+        "passed": true,
+        "total_constraints": 0,
+        "preserved": 0,
+        "missing_count": 0,
+        "missing": [],
+        "warnings": []
+      },
+      "banned_phrase_violations": 0,
+      "diff": {
+        "exit": 0,
+        "original_word_count": 346,
+        "transformed_word_count": 346,
+        "similarity_ratio": 1.0,
+        "change_percentage": 0.0,
+        "words_added": 0,
+        "words_removed": 0,
+        "words_changed": 0,
+        "excessive_change": false,
+        "flags": []
+      },
+      "scanner_review": [
+        {
+          "tool": "structure_scan",
+          "metric": "sentence_burstiness",
+          "classification": "protected source",
+          "reason": "Parallel reference sections list distinct participation roles or required work. The headings repaired below do not justify restructuring unrelated factual sentences."
+        },
+        {
+          "tool": "structure_scan",
+          "metric": "one_line_staccato",
+          "classification": "protected source",
+          "reason": "Separate cards, headings, labels, and calls to action are short UI elements, not successive paragraphs of running prose."
+        },
+        {
+          "tool": "silhouette_scan",
+          "metric": "silhouette_penalty",
+          "classification": "protected source",
+          "reason": "A page covers one defined topic across its introduction, detailed requirements, and relevant links. Shared domain vocabulary is necessary and does not confirm a recap or scaffold defect."
+        },
+        {
+          "tool": "silhouette_scan",
+          "metric": "callback_content",
+          "classification": "protected source",
+          "reason": "A page covers one defined topic across its introduction, detailed requirements, and relevant links. Shared domain vocabulary is necessary and does not confirm a recap or scaffold defect."
+        },
+        {
+          "tool": "readability_metrics",
+          "flag": "High reading level (15.3 grade)",
+          "classification": "protected source",
+          "reason": "Technical terms, explicit eligibility/rule language, and separated UI elements are necessary here. No confirmed defect in the sentences associated with this metric."
+        },
+        {
+          "tool": "readability_metrics",
+          "flag": "3+ consecutive similar-length sentences",
+          "classification": "protected source",
+          "reason": "Technical terms, explicit eligibility/rule language, and separated UI elements are necessary here. No confirmed defect in the sentences associated with this metric."
+        },
+        {
+          "tool": "readability_metrics",
+          "flag": "High word repetition (31.0%)",
+          "classification": "protected source",
+          "reason": "Technical terms, explicit eligibility/rule language, and separated UI elements are necessary here. No confirmed defect in the sentences associated with this metric."
+        }
+      ]
+    },
+    {
+      "page": "involve",
+      "language": "zh",
+      "changed": true,
+      "preservation": {
+        "exit": 0,
+        "passed": true,
+        "total_constraints": 0,
+        "preserved": 0,
+        "missing_count": 0,
+        "missing": [],
+        "warnings": []
+      },
+      "banned_phrase_violations": 0,
+      "diff": {
+        "exit": 0,
+        "original_word_count": 148,
+        "transformed_word_count": 146,
+        "similarity_ratio": 0.986,
+        "change_percentage": 2.0,
+        "words_added": 0,
+        "words_removed": 0,
+        "words_changed": 3,
+        "excessive_change": false,
+        "flags": []
+      },
+      "scanner_review": [
+        {
+          "tool": "structure_scan",
+          "metric": "one_line_staccato",
+          "classification": "protected source",
+          "reason": "English sentence and word tokenization is not valid for Chinese; reviewed manually as headings and separated interface cards."
+        },
+        {
+          "tool": "readability_metrics",
+          "flag": "High reading level (27.7 grade)",
+          "classification": "protected source",
+          "reason": "English readability formulas and whitespace word counts are not meaningful for Chinese; manually reviewed."
+        },
+        {
+          "tool": "readability_metrics",
+          "flag": "Long average sentence length (80.0 words)",
+          "classification": "protected source",
+          "reason": "English readability formulas and whitespace word counts are not meaningful for Chinese; manually reviewed."
+        }
+      ]
+    },
+    {
+      "page": "partners",
+      "language": "en",
+      "changed": true,
+      "preservation": {
+        "exit": 0,
+        "passed": true,
+        "total_constraints": 2,
+        "preserved": 2,
+        "missing_count": 0,
+        "missing": [],
+        "warnings": []
+      },
+      "banned_phrase_violations": 0,
+      "diff": {
+        "exit": 0,
+        "original_word_count": 299,
+        "transformed_word_count": 300,
+        "similarity_ratio": 0.982,
+        "change_percentage": 2.0,
+        "words_added": 0,
+        "words_removed": 0,
+        "words_changed": 6,
+        "excessive_change": false,
+        "flags": []
+      },
+      "scanner_review": [
+        {
+          "tool": "structure_scan",
+          "metric": "sentence_burstiness",
+          "classification": "protected source",
+          "reason": "Parallel reference sections list distinct participation roles or required work. The headings repaired below do not justify restructuring unrelated factual sentences."
+        },
+        {
+          "tool": "silhouette_scan",
+          "metric": "silhouette_penalty",
+          "classification": "protected source",
+          "reason": "A page covers one defined topic across its introduction, detailed requirements, and relevant links. Shared domain vocabulary is necessary and does not confirm a recap or scaffold defect."
+        },
+        {
+          "tool": "readability_metrics",
+          "flag": "High reading level (21.8 grade)",
+          "classification": "protected source",
+          "reason": "Technical terms, explicit eligibility/rule language, and separated UI elements are necessary here. No confirmed defect in the sentences associated with this metric."
+        },
+        {
+          "tool": "readability_metrics",
+          "flag": "High word repetition (27.6%)",
+          "classification": "protected source",
+          "reason": "Technical terms, explicit eligibility/rule language, and separated UI elements are necessary here. No confirmed defect in the sentences associated with this metric."
+        },
+        {
+          "tool": "readability_metrics",
+          "flag": "Long average sentence length (25.7 words)",
+          "classification": "protected source",
+          "reason": "Technical terms, explicit eligibility/rule language, and separated UI elements are necessary here. No confirmed defect in the sentences associated with this metric."
+        }
+      ]
+    },
+    {
+      "page": "partners",
+      "language": "zh",
+      "changed": true,
+      "preservation": {
+        "exit": 0,
+        "passed": true,
+        "total_constraints": 0,
+        "preserved": 0,
+        "missing_count": 0,
+        "missing": [],
+        "warnings": []
+      },
+      "banned_phrase_violations": 0,
+      "diff": {
+        "exit": 0,
+        "original_word_count": 122,
+        "transformed_word_count": 122,
+        "similarity_ratio": 0.992,
+        "change_percentage": 0.8,
+        "words_added": 0,
+        "words_removed": 0,
+        "words_changed": 1,
+        "excessive_change": false,
+        "flags": []
+      },
+      "scanner_review": [
+        {
+          "tool": "structure_scan",
+          "metric": "one_line_staccato",
+          "classification": "protected source",
+          "reason": "English sentence and word tokenization is not valid for Chinese; reviewed manually as headings and separated interface cards."
+        },
+        {
+          "tool": "readability_metrics",
+          "flag": "High reading level (22.1 grade)",
+          "classification": "protected source",
+          "reason": "English readability formulas and whitespace word counts are not meaningful for Chinese; manually reviewed."
+        },
+        {
+          "tool": "readability_metrics",
+          "flag": "Long average sentence length (65.0 words)",
+          "classification": "protected source",
+          "reason": "English readability formulas and whitespace word counts are not meaningful for Chinese; manually reviewed."
+        }
+      ]
+    },
+    {
+      "page": "research",
+      "language": "en",
+      "changed": true,
+      "preservation": {
+        "exit": 0,
+        "passed": true,
+        "total_constraints": 1,
+        "preserved": 1,
+        "missing_count": 0,
+        "missing": [],
+        "warnings": []
+      },
+      "banned_phrase_violations": 0,
+      "diff": {
+        "exit": 0,
+        "original_word_count": 265,
+        "transformed_word_count": 267,
+        "similarity_ratio": 0.974,
+        "change_percentage": 4.9,
+        "words_added": 7,
+        "words_removed": 5,
+        "words_changed": 1,
+        "excessive_change": false,
+        "flags": []
+      },
+      "scanner_review": [
+        {
+          "tool": "structure_scan",
+          "metric": "sentence_burstiness",
+          "classification": "protected source",
+          "reason": "Parallel reference sections list distinct participation roles or required work. The headings repaired below do not justify restructuring unrelated factual sentences."
+        },
+        {
+          "tool": "readability_metrics",
+          "flag": "High reading level (19.5 grade)",
+          "classification": "protected source",
+          "reason": "Technical terms, explicit eligibility/rule language, and separated UI elements are necessary here. No confirmed defect in the sentences associated with this metric."
+        }
+      ]
+    },
+    {
+      "page": "research",
+      "language": "zh",
+      "changed": true,
+      "preservation": {
+        "exit": 0,
+        "passed": true,
+        "total_constraints": 0,
+        "preserved": 0,
+        "missing_count": 0,
+        "missing": [],
+        "warnings": []
+      },
+      "banned_phrase_violations": 0,
+      "diff": {
+        "exit": 0,
+        "original_word_count": 117,
+        "transformed_word_count": 117,
+        "similarity_ratio": 0.983,
+        "change_percentage": 1.7,
+        "words_added": 0,
+        "words_removed": 0,
+        "words_changed": 2,
+        "excessive_change": false,
+        "flags": []
+      },
+      "scanner_review": [
+        {
+          "tool": "structure_scan",
+          "metric": "one_line_staccato",
+          "classification": "protected source",
+          "reason": "English sentence and word tokenization is not valid for Chinese; reviewed manually as headings and separated interface cards."
+        },
+        {
+          "tool": "readability_metrics",
+          "flag": "High reading level (20.0 grade)",
+          "classification": "protected source",
+          "reason": "English readability formulas and whitespace word counts are not meaningful for Chinese; manually reviewed."
+        },
+        {
+          "tool": "readability_metrics",
+          "flag": "Long average sentence length (60.0 words)",
+          "classification": "protected source",
+          "reason": "English readability formulas and whitespace word counts are not meaningful for Chinese; manually reviewed."
+        }
+      ]
+    },
+    {
+      "page": "resources",
+      "language": "en",
+      "changed": false,
+      "preservation": {
+        "exit": 0,
+        "passed": true,
+        "total_constraints": 13,
+        "preserved": 13,
+        "missing_count": 0,
+        "missing": [],
+        "warnings": []
+      },
+      "banned_phrase_violations": 0,
+      "diff": {
+        "exit": 0,
+        "original_word_count": 907,
+        "transformed_word_count": 907,
+        "similarity_ratio": 1.0,
+        "change_percentage": 0.0,
+        "words_added": 0,
+        "words_removed": 0,
+        "words_changed": 0,
+        "excessive_change": false,
+        "flags": []
+      },
+      "scanner_review": [
+        {
+          "tool": "silhouette_scan",
+          "metric": "silhouette_penalty",
+          "classification": "protected source",
+          "reason": "A page covers one defined topic across its introduction, detailed requirements, and relevant links. Shared domain vocabulary is necessary and does not confirm a recap or scaffold defect."
+        },
+        {
+          "tool": "silhouette_scan",
+          "metric": "callback_content",
+          "classification": "protected source",
+          "reason": "A page covers one defined topic across its introduction, detailed requirements, and relevant links. Shared domain vocabulary is necessary and does not confirm a recap or scaffold defect."
+        },
+        {
+          "tool": "readability_metrics",
+          "flag": "High reading level (16.8 grade)",
+          "classification": "protected source",
+          "reason": "Technical terms, explicit eligibility/rule language, and separated UI elements are necessary here. No confirmed defect in the sentences associated with this metric."
+        },
+        {
+          "tool": "readability_metrics",
+          "flag": "High word repetition (32.6%)",
+          "classification": "protected source",
+          "reason": "Technical terms, explicit eligibility/rule language, and separated UI elements are necessary here. No confirmed defect in the sentences associated with this metric."
+        }
+      ]
+    },
+    {
+      "page": "resources",
+      "language": "zh",
+      "changed": false,
+      "preservation": {
+        "exit": 0,
+        "passed": true,
+        "total_constraints": 8,
+        "preserved": 8,
+        "missing_count": 0,
+        "missing": [],
+        "warnings": []
+      },
+      "banned_phrase_violations": 0,
+      "diff": {
+        "exit": 0,
+        "original_word_count": 453,
+        "transformed_word_count": 453,
+        "similarity_ratio": 1.0,
+        "change_percentage": 0.0,
+        "words_added": 0,
+        "words_removed": 0,
+        "words_changed": 0,
+        "excessive_change": false,
+        "flags": []
+      },
+      "scanner_review": [
+        {
+          "tool": "structure_scan",
+          "metric": "one_line_staccato",
+          "classification": "protected source",
+          "reason": "English sentence and word tokenization is not valid for Chinese; reviewed manually as headings and separated interface cards."
+        },
+        {
+          "tool": "readability_metrics",
+          "flag": "High reading level (99.2 grade)",
+          "classification": "protected source",
+          "reason": "English readability formulas and whitespace word counts are not meaningful for Chinese; manually reviewed."
+        },
+        {
+          "tool": "readability_metrics",
+          "flag": "Long average sentence length (261.0 words)",
+          "classification": "protected source",
+          "reason": "English readability formulas and whitespace word counts are not meaningful for Chinese; manually reviewed."
+        }
+      ]
+    },
+    {
+      "page": "teams",
+      "language": "en",
+      "changed": false,
+      "preservation": {
+        "exit": 0,
+        "passed": true,
+        "total_constraints": 0,
+        "preserved": 0,
+        "missing_count": 0,
+        "missing": [],
+        "warnings": []
+      },
+      "banned_phrase_violations": 0,
+      "diff": {
+        "exit": 0,
+        "original_word_count": 36,
+        "transformed_word_count": 36,
+        "similarity_ratio": 1.0,
+        "change_percentage": 0.0,
+        "words_added": 0,
+        "words_removed": 0,
+        "words_changed": 0,
+        "excessive_change": false,
+        "flags": []
+      },
+      "scanner_review": [
+        {
+          "tool": "silhouette_scan",
+          "metric": "silhouette_penalty",
+          "classification": "protected source",
+          "reason": "This is a brief coming-soon notice; the opening and closing both refer to registration status and the correct preparation link."
+        },
+        {
+          "tool": "silhouette_scan",
+          "metric": "preview_fulfillment",
+          "classification": "protected source",
+          "reason": "This is a brief coming-soon notice; the opening and closing both refer to registration status and the correct preparation link."
+        }
+      ]
+    },
+    {
+      "page": "teams",
+      "language": "zh",
+      "changed": false,
+      "preservation": {
+        "exit": 0,
+        "passed": true,
+        "total_constraints": 0,
+        "preserved": 0,
+        "missing_count": 0,
+        "missing": [],
+        "warnings": []
+      },
+      "banned_phrase_violations": 0,
+      "diff": {
+        "exit": 0,
+        "original_word_count": 11,
+        "transformed_word_count": 11,
+        "similarity_ratio": 1.0,
+        "change_percentage": 0.0,
+        "words_added": 0,
+        "words_removed": 0,
+        "words_changed": 0,
+        "excessive_change": false,
+        "flags": []
+      },
+      "scanner_review": []
+    }
+  ],
+  "verification": {
+    "local_syntax_check": "passed",
+    "stable_site_syntax_check": "passed",
+    "git_diff_check": "passed",
+    "browser": "Chinese and English research headings render with the intended wording and wrap without clipping in the narrow layout. Language toggle retains the section anchor and changes OAIC links to the selected language.",
+    "screenshot": "research-zh.png"
+  }
+}
