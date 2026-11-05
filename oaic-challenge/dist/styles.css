@@ -112,3 +112,9 @@ html[lang="zh-CN"] .event-tagline{font-family:var(--cn-display);letter-spacing:.
 @media print{.guide-step-toggle{display:none}.participant-timeline>li:before{display:none}.guide-step-summary{break-after:avoid}.guide-step-body{border:0}.participant-step{break-inside:avoid}}
 
 html:has(.participant-guide){scroll-padding-top:0}
+
+/* GOSIM partner identity, using the supplied white SVG. */
+.gosim-brand{display:flex;align-items:center;flex-shrink:0}
+.gosim-brand img{display:block;width:85px;height:24px;filter:brightness(0)}
+.acid .gosim-brand img{filter:none}
+@media(max-width:620px){.brand{gap:8px}.brand-by{padding-left:8px}.brand .gaac-home img{width:100px}.brand .brand-by .oaic-mark{width:55px}.gosim-brand img{width:60px;height:auto}.site-header{gap:8px}.header-actions{gap:4px}}
