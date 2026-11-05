@@ -1,4 +1,4 @@
-import {createEventPages} from '/event-pages.js?v=gaac-unslop-20261105a';
+import {createEventPages} from '/event-pages.js?v=gaac-whitepaper-context-20261105';
 (() => {
   'use strict';
   const app = document.querySelector('#app');

@@ -155,3 +155,14 @@ html[lang="zh-CN"] .island-hero h1{font-size:clamp(38px,4.55vw,66px);letter-spac
  .event-intro-actions{width:100%}
  .footer-nav{gap:18px 24px}
 }
+
+.hero-reference{grid-column:1/-1;display:flex;flex-direction:column;align-items:center;justify-content:center;width:100%;margin-top:14px;text-align:center}
+.home-whitepaper{display:inline-flex;align-items:center;justify-content:center;gap:10px;max-width:100%;min-height:44px;padding:8px 4px;font-size:14px;line-height:1.8;scroll-margin-top:32px}
+.home-whitepaper>span:first-of-type{text-decoration:underline;text-underline-offset:4px;text-wrap:balance}
+.home-whitepaper>.gaac-icon{font-size:20px}
+.home-whitepaper>span:last-child{flex-shrink:0}
+.home-whitepaper:hover{color:var(--accent-ink)}
+.home-whitepaper:focus-visible{outline:2px solid var(--ink);outline-offset:5px;border-radius:3px}
+@media(max-width:620px){.hero-reference{margin-top:12px}.home-whitepaper{font-size:12px;gap:8px}}
+
+.hero-reference p{max-width:640px;margin:2px 0 0;font-size:12px;line-height:1.8;color:var(--muted);text-wrap:balance}
