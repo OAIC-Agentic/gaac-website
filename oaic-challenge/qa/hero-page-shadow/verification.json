@@ -1,0 +1,41 @@
+{
+  "date": "2026-11-05",
+  "fix": [
+    "Turn the research page upward and reverse its curl across the spine.",
+    "Fade opaque depth and shadow coverage with the island; glass never writes invisible depth.",
+    "Dispose custom shadow materials on unmount."
+  ],
+  "pageSamples": 169,
+  "realWebGLChecksPassed": 5,
+  "integrationChecksPassed": 48,
+  "transitionsChecked": 8,
+  "shaderCompilesDuringTransitions": 0,
+  "nearHiddenFrameComparison": {
+    "viewport": [
+      800,
+      600
+    ],
+    "previousFocusCodeWithSameGeometry": {
+      "changedPixels": 22842,
+      "pixelFraction": 0.0475875,
+      "meanChannelDifference": 0.8183541666666667
+    },
+    "correctedFocusCode": {
+      "changedPixels": 100,
+      "pixelFraction": 0.00020833333333333335,
+      "meanChannelDifference": 0.00905763888888889
+    },
+    "changedPixelThreshold": "Largest RGB channel difference > 8 between the last fading frame and fully hidden surroundings."
+  },
+  "visualEvidence": [
+    "research-preview.png",
+    "frame-0.webp",
+    "frame-1.webp",
+    "frame-2.webp",
+    "frame-3.webp",
+    "frame-4.webp",
+    "frame-5.webp",
+    "frame-6.webp"
+  ],
+  "limitations": "Desktop browser WebGL checks; no physical mobile device test."
+}

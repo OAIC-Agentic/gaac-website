@@ -1,0 +1,212 @@
+[
+  {
+    "label": "smooth independent loop 7.2",
+    "pass": true
+  },
+  {
+    "label": "smooth independent loop 6.4",
+    "pass": true
+  },
+  {
+    "label": "smooth independent loop 8.4",
+    "pass": true
+  },
+  {
+    "label": "all three tasks change together in every sampled interval across 42 seconds",
+    "pass": true
+  },
+  {
+    "label": "chart tracer fades before returning to its start",
+    "pass": true
+  },
+  {
+    "label": "focus context preserves animated opacity",
+    "pass": true
+  },
+  {
+    "label": "detail view isolates selected island",
+    "pass": true
+  },
+  {
+    "label": "overview restores every island",
+    "pass": true
+  },
+  {
+    "label": "returning glass fades monotonically without disappearing",
+    "pass": true
+  },
+  {
+    "label": "transition preserves render queues depth writes and shader versions",
+    "pass": true
+  },
+  {
+    "label": "real WebGL automatic start",
+    "pass": true,
+    "detail": "1.68"
+  },
+  {
+    "label": "pause stops rendering",
+    "pass": true
+  },
+  {
+    "label": "resume continues rendering",
+    "pass": true
+  },
+  {
+    "label": "offscreen stops rendering",
+    "pass": true
+  },
+  {
+    "label": "intersection resume",
+    "pass": true
+  },
+  {
+    "label": "background stops rendering",
+    "pass": true
+  },
+  {
+    "label": "foreground resume",
+    "pass": true
+  },
+  {
+    "label": "hover rotates without any mouse press",
+    "pass": true
+  },
+  {
+    "label": "leaving hover gently restores the view",
+    "pass": true
+  },
+  {
+    "label": "vertical touch leaves exploration unchanged",
+    "pass": true
+  },
+  {
+    "label": "horizontal touch enters exploration",
+    "pass": true
+  },
+  {
+    "label": "business clock continues while exploring",
+    "pass": true
+  },
+  {
+    "label": "drag does not select an island",
+    "pass": true
+  },
+  {
+    "label": "reset returns to overview",
+    "pass": true
+  },
+  {
+    "label": "HTML compute label focuses the server pavilion",
+    "pass": true
+  },
+  {
+    "label": "label focus resets",
+    "pass": true
+  },
+  {
+    "label": "detail framing and running business 0",
+    "pass": true,
+    "detail": {
+      "zoom": 2.037659787153022
+    }
+  },
+  {
+    "label": "detail framing and running business 1",
+    "pass": true,
+    "detail": {
+      "zoom": 2.0337625929291
+    }
+  },
+  {
+    "label": "detail framing and running business 2",
+    "pass": true,
+    "detail": {
+      "zoom": 2.2786256310834885
+    }
+  },
+  {
+    "label": "detail framing and running business 3",
+    "pass": true,
+    "detail": {
+      "zoom": 2.4038896183418768
+    }
+  },
+  {
+    "label": "overview restores zoom and removes detail state",
+    "pass": true
+  },
+  {
+    "label": "clicking actual island geometry opens its detail",
+    "pass": true
+  },
+  {
+    "label": "unmount cancels frames",
+    "pass": true
+  },
+  {
+    "label": "GPU resources disposed",
+    "pass": true,
+    "detail": {
+      "geometry": 752,
+      "material": 444,
+      "texture": 4
+    }
+  },
+  {
+    "label": "reduced motion renders a still frame",
+    "pass": true
+  },
+  {
+    "label": "reduced motion suppresses hover movement",
+    "pass": true
+  },
+  {
+    "label": "no WebGL uses cover",
+    "pass": true
+  },
+  {
+    "label": "fallback image available",
+    "pass": true
+  },
+  {
+    "label": "context loss falls back safely",
+    "pass": true
+  },
+  {
+    "label": "route /challenge/",
+    "pass": true
+  },
+  {
+    "label": "route /teams/",
+    "pass": true
+  },
+  {
+    "label": "route /resources/",
+    "pass": true
+  },
+  {
+    "label": "route /partners/",
+    "pass": true
+  },
+  {
+    "label": "route /enterprise/",
+    "pass": true
+  },
+  {
+    "label": "route /research/",
+    "pass": true
+  },
+  {
+    "label": "route /ecosystem/",
+    "pass": true
+  },
+  {
+    "label": "route /involve/",
+    "pass": true
+  },
+  {
+    "label": "route /directions/",
+    "pass": true
+  }
+]

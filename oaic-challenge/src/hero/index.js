@@ -20,7 +20,7 @@ export function mountHero(host, {lang='zh'}={}) {
   const camera=new THREE.OrthographicCamera(-7,7,5,-5,.1,100);
   function disposeGPU() {
     const geometries=new Set(), materials=new Set(), textures=new Set();
-    scene?.traverse(o=>{if(o.isInstancedMesh)o.dispose();if(o.isLight)o.shadow?.dispose();if(o.geometry)geometries.add(o.geometry);for(const mat of (Array.isArray(o.material)?o.material:[o.material]))if(mat){materials.add(mat);for(const val of Object.values(mat))if(val?.isTexture)textures.add(val);}});
+    scene?.traverse(o=>{if(o.isInstancedMesh)o.dispose();if(o.isLight)o.shadow?.dispose();if(o.geometry)geometries.add(o.geometry);for(const mat of [...(Array.isArray(o.material)?o.material:[o.material]),o.customDepthMaterial,o.customDistanceMaterial])if(mat){materials.add(mat);for(const val of Object.values(mat))if(val?.isTexture)textures.add(val);}});
     geometries.forEach(g=>g.dispose());materials.forEach(m=>m.dispose());textures.forEach(t=>t.dispose());
     environment?.dispose();renderer?.dispose();renderer?.forceContextLoss();
   }

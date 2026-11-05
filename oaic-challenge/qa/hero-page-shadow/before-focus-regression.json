@@ -1,0 +1,38 @@
+[
+  {
+    "name": "page stays above the open spread through a complete turn",
+    "pass": true,
+    "detail": {
+      "minClearance": 0.16999999999999998,
+      "maxLift": 1.1199999880790714,
+      "samples": 169
+    }
+  },
+  {
+    "name": "upright page has a finite nonzero transform",
+    "pass": true,
+    "detail": {
+      "minDeterminant": 0.0001
+    }
+  },
+  {
+    "name": "animated shadow coverage follows outgoing surfaces",
+    "pass": false,
+    "detail": {
+      "castersSampled": 25280
+    }
+  },
+  {
+    "name": "focus does not switch render queues depth settings or shader defines",
+    "pass": true
+  },
+  {
+    "name": "hiding the last fading frame does not reveal a solid bridge or shadow",
+    "pass": false,
+    "detail": {
+      "changedPixels": 22842,
+      "pixelFraction": 0.0475875,
+      "meanChannelDifference": 0.8183541666666667
+    }
+  }
+]

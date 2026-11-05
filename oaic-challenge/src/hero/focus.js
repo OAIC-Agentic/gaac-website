@@ -1,10 +1,11 @@
-import {AddEquation,CustomBlending,OneFactor,OneMinusSrcAlphaFactor,SrcAlphaFactor} from 'three';
+import {MeshDepthMaterial} from 'three';
 
 // Keep each island's opacity independent while preserving unique animated
 // materials (for example the finance rows) and shared geometry/textures.
-// Opaque surfaces stay in the opaque queue, before transmissive glass. A fixed
-// blend setup lets opacity vary without changing shader defines, depth writes
-// or render queues at either end of a transition.
+// Hashed coverage fades solid surfaces and their depth together. Blending an
+// invisible solid still writes depth, and its default shadow stays opaque.
+// Keep coverage and shadow materials configured from the first frame so
+// changing focus never changes render queues or compiles shader variants.
 export function makeFocusContext(root){
   const owners=new Map(),groups=new Map();
   for(const child of root.children){
@@ -13,7 +14,7 @@ export function makeFocusContext(root){
     groups.get(owner).objects.push(child);
     child.traverse(mesh=>{if(!mesh.material)return;for(const material of [mesh.material].flat()){if(!owners.has(material))owners.set(material,new Set());owners.get(material).add(owner);}});
   }
-  const copies=new Map();
+  const copies=new Map(),shadows=new Map();
   for(const [owner,group] of groups){
     const materialFor=material=>{
       let result=material;
@@ -22,13 +23,18 @@ export function makeFocusContext(root){
         const pool=copies.get(material);if(!pool.has(owner))pool.set(owner,material.clone());result=pool.get(owner);
       }
       if(!result.transparent){
-        result.blending=CustomBlending;result.blendEquation=AddEquation;
-        result.blendSrc=SrcAlphaFactor;result.blendDst=OneMinusSrcAlphaFactor;
-        result.blendEquationAlpha=AddEquation;result.blendSrcAlpha=OneFactor;result.blendDstAlpha=OneMinusSrcAlphaFactor;
-      }
+        result.alphaHash=true;
+      }else result.depthWrite=false;
       group.materials.add(result);return result;
     };
-    for(const object of group.objects)object.traverse(mesh=>{if(mesh.material)mesh.material=Array.isArray(mesh.material)?mesh.material.map(materialFor):materialFor(mesh.material);});
+    for(const object of group.objects)object.traverse(mesh=>{
+      if(!mesh.material)return;
+      mesh.material=Array.isArray(mesh.material)?mesh.material.map(materialFor):materialFor(mesh.material);
+      if(mesh.castShadow&&!Array.isArray(mesh.material)){
+        if(!shadows.has(mesh.material))shadows.set(mesh.material,new MeshDepthMaterial({alphaHash:true}));
+        mesh.customDepthMaterial=shadows.get(mesh.material);
+      }
+    });
     group.materials=[...group.materials].map(material=>({material,opacity:material.opacity}));
   }
   copies.forEach((_,original)=>original.dispose());
@@ -45,6 +51,8 @@ export function makeFocusContext(root){
           state.material.opacity*=group.weight;
         }
       }
+      // Shadow-map materials do not inherit the surface opacity in Three.js.
+      for(const [surface,depth] of shadows)depth.opacity=surface.opacity;
       return moving;
     }
   };

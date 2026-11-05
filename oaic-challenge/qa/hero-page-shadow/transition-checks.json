@@ -1,0 +1,92 @@
+[
+  {
+    "name": "steady",
+    "frames": 65,
+    "compiles": 0,
+    "programsBefore": 24,
+    "programsAfter": 24,
+    "p95FrameGapMs": 24.899999998509884,
+    "maxFrameGapMs": 25.799999997019768,
+    "clockAdvanced": 1.17
+  },
+  {
+    "name": "enter finance",
+    "frames": 72,
+    "compiles": 0,
+    "programsBefore": 24,
+    "programsAfter": 24,
+    "p95FrameGapMs": 25.100000001490116,
+    "maxFrameGapMs": 25.19999999552965,
+    "clockAdvanced": 1.3900000000000001
+  },
+  {
+    "name": "exit finance",
+    "frames": 75,
+    "compiles": 0,
+    "programsBefore": 24,
+    "programsAfter": 24,
+    "p95FrameGapMs": 25,
+    "maxFrameGapMs": 25.399999998509884,
+    "clockAdvanced": 1.3899999999999997
+  },
+  {
+    "name": "enter research",
+    "frames": 74,
+    "compiles": 0,
+    "programsBefore": 24,
+    "programsAfter": 24,
+    "p95FrameGapMs": 25.299999997019768,
+    "maxFrameGapMs": 25.600000001490116,
+    "clockAdvanced": 1.38
+  },
+  {
+    "name": "exit research",
+    "frames": 74,
+    "compiles": 0,
+    "programsBefore": 24,
+    "programsAfter": 24,
+    "p95FrameGapMs": 25.200000002980232,
+    "maxFrameGapMs": 25.30000000447035,
+    "clockAdvanced": 1.3800000000000008
+  },
+  {
+    "name": "enter compute",
+    "frames": 77,
+    "compiles": 0,
+    "programsBefore": 24,
+    "programsAfter": 24,
+    "p95FrameGapMs": 24.599999994039536,
+    "maxFrameGapMs": 25.69999999552965,
+    "clockAdvanced": 1.4000000000000004
+  },
+  {
+    "name": "exit compute",
+    "frames": 74,
+    "compiles": 0,
+    "programsBefore": 24,
+    "programsAfter": 24,
+    "p95FrameGapMs": 25.30000000447035,
+    "maxFrameGapMs": 25.600000001490116,
+    "clockAdvanced": 1.379999999999999
+  },
+  {
+    "name": "enter ppt",
+    "frames": 74,
+    "compiles": 0,
+    "programsBefore": 24,
+    "programsAfter": 24,
+    "p95FrameGapMs": 25.100000001490116,
+    "maxFrameGapMs": 25.400000005960464,
+    "clockAdvanced": 1.4000000000000004
+  },
+  {
+    "name": "exit ppt",
+    "frames": 74,
+    "compiles": 0,
+    "programsBefore": 24,
+    "programsAfter": 24,
+    "p95FrameGapMs": 24.899999998509884,
+    "maxFrameGapMs": 25.600000001490116,
+    "clockAdvanced": 1.3600000000000012
+  }
+]

@@ -36,7 +36,7 @@ function finish(){
 function start(name,capture=false){watch={name,capture,start:performance.now(),nextCapture:0,frames:[],images:[],compiles,programs:renderer.info.programs.length};}
 try{
   await wait(2000);start('steady');await wait(1200);finish();
-  for(const [i,name] of [[1,'finance'],[3,'compute'],[0,'ppt']]){
+  for(const [i,name] of [[1,'finance'],[2,'research'],[3,'compute'],[0,'ppt']]){
     start('enter '+name);host.querySelector('[data-hero-focus="'+i+'"]').click();await wait(1400);finish();
     start('exit '+name,new URLSearchParams(location.search).has('capture'));host.querySelector('[data-hero-reset]').click();await wait(1400);finish();
   }
