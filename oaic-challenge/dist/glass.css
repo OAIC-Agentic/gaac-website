@@ -156,13 +156,10 @@ html[lang="zh-CN"] .island-hero h1{font-size:clamp(38px,4.55vw,66px);letter-spac
  .footer-nav{gap:18px 24px}
 }
 
-.hero-reference{grid-column:1/-1;display:flex;flex-direction:column;align-items:center;justify-content:center;width:100%;margin-top:14px;text-align:center}
-.home-whitepaper{display:inline-flex;align-items:center;justify-content:center;gap:10px;max-width:100%;min-height:44px;padding:8px 4px;font-size:14px;line-height:1.8;scroll-margin-top:32px}
-.home-whitepaper>span:first-of-type{text-decoration:underline;text-underline-offset:4px;text-wrap:balance}
-.home-whitepaper>.gaac-icon{font-size:20px}
-.home-whitepaper>span:last-child{flex-shrink:0}
+.hero-reference{grid-column:1/-1;display:flex;justify-content:center;width:100%;margin-top:20px;text-align:center}
+.hero-reference p{max-width:900px;margin:0;font-size:18px;line-height:1.9;color:var(--muted);text-wrap:balance}
+.home-whitepaper{color:var(--ink);text-decoration:underline;text-underline-offset:4px;scroll-margin-top:32px}
+.home-whitepaper>.gaac-icon{margin-right:6px;font-size:1.15em;vertical-align:-.16em}
 .home-whitepaper:hover{color:var(--accent-ink)}
 .home-whitepaper:focus-visible{outline:2px solid var(--ink);outline-offset:5px;border-radius:3px}
-@media(max-width:620px){.hero-reference{margin-top:12px}.home-whitepaper{font-size:12px;gap:8px}}
-
-.hero-reference p{max-width:640px;margin:2px 0 0;font-size:12px;line-height:1.8;color:var(--muted);text-wrap:balance}
+@media(max-width:620px){.hero-reference{margin-top:16px}.hero-reference p{font-size:16px}}
